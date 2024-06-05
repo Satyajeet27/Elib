@@ -7,7 +7,7 @@ import authentication from "./middleware/authentication";
 const app = express();
 app.use(express.json());
 
-app.get("/test", authentication, (req, res) => {
+app.get("/test", (req, res) => {
   res.send({
     message: "this is a testing",
   });
